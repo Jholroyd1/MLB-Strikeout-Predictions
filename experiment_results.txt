@@ -1,0 +1,8 @@
+| Approach | MAE | Result |
+|----------|-----|--------|
+| Current Model (59 features) | 29.92 K | ✅ BASELINE |
+| Random Forest | 28.66 K | ❌ -4.2% |
+| Gradient Boosting | 30.10 K | ❌ +0.6% |
+| Lasso Selection (13 features) | 30.31 K | ❌ +1.3% |
+| Separate Starter/Reliever | 30.03 K | ❌ +0.3% |
+| Ensemble (weighted) | 29.26 K | ❌ -2.2% |
