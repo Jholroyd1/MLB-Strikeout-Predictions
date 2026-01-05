@@ -104,8 +104,9 @@ We tested **multiple approaches** on the current dataset (989 records, 2021-2024
 
 All experiment code available in `rerun_all_experiments.py`
 
-## � 2026 Projections
+## 📊 2026 Projections
 
+### Primary Projections (High Confidence)
 **339 pitchers** qualified (50+ IP in 2025):
 - **0 pitchers** projected for 200+ K (most conservative: 199 K)
 - **23 pitchers** projected for 150+ K
@@ -117,6 +118,22 @@ All experiment code available in `rerun_all_experiments.py`
 3. Garrett Crochet (BOS) - 182 K (range: 153-211)
 4. Jesus Luzardo (PHI) - 181 K (range: 152-210)
 5. Zack Wheeler (PHI) - 178 K (range: 149-207)
+
+### Supplemental Projections (Lower Confidence)
+**330 additional pitchers** who didn't pitch in 2025 (injured, traded, etc.):
+- Uses most recent season data (2024, 2023, or 2022)
+- Applies time-away adjustments (-5% per year + age penalties)
+- Higher uncertainty ranges
+- Available in `data/2026_supplemental_projections.csv`
+
+**Top 5 Supplemental:**
+1. Spencer Arrighetti - 145 K (based on 2024)
+2. Nestor Cortes (NYY) - 139 K (based on 2024)
+3. Shohei Ohtani (pitching) - 137 K (based on 2023, 2yr away)
+4. Kyle Wright - 135 K (based on 2022, 3yr away)
+5. Kutter Crawford - 135 K (based on 2024)
+
+⚠️ **Note**: Supplemental projections are less reliable and should be used cautiously.
 
 **Model Insight**: Random Forest produces more conservative projections than linear models, with no pitchers breaking 200 K threshold.
 
